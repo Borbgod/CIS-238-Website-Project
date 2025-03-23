@@ -1,0 +1,39 @@
+/************
+Ash, Aaron, Brian, Gabe, and Makenna
+3/23/25
+styles.css
+************/
+
+/*CSS Reset*/
+* {padding: 0; border: 0; margin: 0;}
+
+/*Style rules for body and images*/
+body {background-color: #e2f4e5;}
+
+/*Style rule for box sizing applies to all elements*/
+* {box-sizing: border-box;}
+
+/*Style rules for mobile viewport*/
+
+/*Style rules for header*/
+header {text-align: center; margin: 4% 2%; font-size: 1.4em;}
+
+/*Style rules for nav - temporary rules until we implement a hamburger menu*/
+nav {margin-bottom: 2%;}
+
+nav li {text-align: center; background-color: #56ab57; border: 1px solid #fff; padding: 2%; font-size: 1.2em;}
+
+nav li a {text-decoration: none; color: #fff;}
+
+/*Style rules for main content*/
+main {margin: 2%;}
+
+
+
+
+/*Style rules for footer*/
+footer {background-color: #56ab57; padding: 2%; text-align: center; color: #fff;}
+
+footer p {margin: 1.5% 0;}
+
+footer a {text-decoration: none; color: #fff;}
