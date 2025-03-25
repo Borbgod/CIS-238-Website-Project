@@ -1,7 +1,5 @@
 /************
-Ash, Aaron, Brian, Gabe, and Makenna
-3/23/25
-styles.css
+
 ************/
 
 /*CSS Reset*/
@@ -9,6 +7,8 @@ styles.css
 
 /*Style rules for body and images*/
 body {background-color: #e2f4e5;}
+
+image {max-width: 100%;}
 
 /*Style rule for box sizing applies to all elements*/
 * {box-sizing: border-box;}
@@ -28,8 +28,11 @@ nav li a {text-decoration: none; color: #fff;}
 /*Style rules for main content*/
 main {margin: 2%;}
 
+h1, h2, h3 {font-family: "Alfa Slab One", serif; font-weight: normal;}
 
+p, li {font-family: Sarabun, sans-serif;}
 
+h1 {text-align: center;}
 
 /*Style rules for footer*/
 footer {background-color: #56ab57; padding: 2%; text-align: center; color: #fff;}
