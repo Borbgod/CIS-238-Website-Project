@@ -14,6 +14,11 @@ img {max-width: 100%;}
 * {box-sizing: border-box;}
 
 /*Style rules for mobile viewport*/
+/*Show mobile, hide tablet-desktop*/
+
+.mobile {display: block;}
+
+.tablet-desktop {display:none;}
 
 /*Style rules for header*/
 header {text-align: center; margin: 4% 2%; font-size: 1.4em;}
@@ -28,25 +33,15 @@ nav li a {text-decoration: none; color: #fff;}
 /*Style rules for main content*/
 main {margin: 2%;}
 
-h1, h2, h3, figcaption {font-family: "Alfa Slab One", serif; font-weight: normal;}
+h1, h2, h3 {font-family: "Alfa Slab One", serif; font-weight: normal;}
 
 p, li {font-family: Sarabun, sans-serif;}
 
-h1, h2 {text-align: center;}
+h1 {text-align: center;}
 
-.grid {
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	grid-gap: 20px;
-	max-width: 80%;
-	margin: auto;
-}
+.tel-link {padding: 1.5%; background-color: #56ab57; margin: 0 auto; width: 70%; }
 
-#homegrid img {
-	border-radius: 25%;
-	min-height: 100%;
-	margin: auto;
-}
+.tel-link a {text-decoration: none; color: #e2f4e5;}
 
 /*Style rules for footer*/
 footer {background-color: #56ab57; padding: 2%; text-align: center; color: #fff;}
@@ -54,3 +49,30 @@ footer {background-color: #56ab57; padding: 2%; text-align: center; color: #fff;
 footer p {margin: 1.5% 0;}
 
 footer a {text-decoration: none; color: #fff;}
+
+/*Style rules for tablet content*/
+
+@media only screen and (min-width: 630px) {
+
+/*Show tablet-desktop, hide mobile class*/
+
+.tablet-desktop {display: block;}
+
+.mobile {display: none;}
+
+}/*end of tablet viewport*/
+
+/*Style rules for contact page*/
+.map {width: 100%; height: 60%;}
+
+#contact {text-align: center; padding: 2%;}
+
+.tel-num {padding: 1.5%;}
+
+/*Style rules for michigan-laws page*/
+
+#m-laws {padding: 2%;}
+
+#u-laws {padding: 2%;}
+
+article h1, h2, p {padding: 1%;}
