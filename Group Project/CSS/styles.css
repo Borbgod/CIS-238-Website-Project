@@ -8,7 +8,7 @@
 /*Style rules for body and images*/
 body {background-color: #e2f4e5;}
 
-image {max-width: 100%;}
+img {max-width: 100%;}
 
 /*Style rule for box sizing applies to all elements*/
 * {box-sizing: border-box;}
