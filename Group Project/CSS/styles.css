@@ -28,11 +28,25 @@ nav li a {text-decoration: none; color: #fff;}
 /*Style rules for main content*/
 main {margin: 2%;}
 
-h1, h2, h3 {font-family: "Alfa Slab One", serif; font-weight: normal;}
+h1, h2, h3, figcaption {font-family: "Alfa Slab One", serif; font-weight: normal;}
 
 p, li {font-family: Sarabun, sans-serif;}
 
-h1 {text-align: center;}
+h1, h2 {text-align: center;}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 20px;
+	max-width: 80%;
+	margin: auto;
+}
+
+#homegrid img {
+	border-radius: 25%;
+	min-height: 100%;
+	margin: auto;
+}
 
 /*Style rules for footer*/
 footer {background-color: #56ab57; padding: 2%; text-align: center; color: #fff;}
