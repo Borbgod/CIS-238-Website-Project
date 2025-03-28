@@ -40,3 +40,10 @@ footer {background-color: #56ab57; padding: 2%; text-align: center; color: #fff;
 footer p {margin: 1.5% 0;}
 
 footer a {text-decoration: none; color: #fff;}
+
+/*Style rules for tablet-desktop content*/
+/*Show tablet-desktop, hide mobile class*/
+
+.tablet-desktop {display: block;}
+
+.mobile {display: none;}
