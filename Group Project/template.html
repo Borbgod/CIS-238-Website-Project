@@ -4,6 +4,7 @@
 	<title>Circumspice Michigan Travel Agency</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sarabun:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -12,21 +13,54 @@
 
 <body id="container">
 	<header>
-		<h1>Circumspice Michigan Travel Agency</h1>
+		<img src="images/circumspice-logo.png" alt="Circumspice logo with text that says Circumpsice, your Michigan Travel Agency">
 	</header>
 	
-	<nav>
+	<!--Mobile Nav-->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="about.html">About Us</a>
+			<a href="events.html">Events</a>
+			<a href="hotels.html">Hotels</a>
+			<a href="restaurants.html">Restaurants</a>
+			<a href="subscribe.html">Subscribe</a>
+			<a href="weather.html">Weather</a>
+			<a href="laws.html">Michigan Laws</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+	
+	<!--Tablet/desktop Nav-->
+	<!-- arrows for menus &#x25BC; &#x25B2; -->
+	<nav class="tablet-desktop">
+	
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="contact.html">Contact Us</a></li>
-			<li><a href="about.html">About Us</a></li>
-			<li><a href="events.html">Events</a></li>
-			<li><a href="hotels.html">Hotels</a></li>
-			<li><a href="restaurants.html">Restaurants</a></li>
+			<li><a onclick="ourinfo()">Our Info <span class="arrow">&#x25BC;</span></a></li>
+			<li><a onclick="todo()">What's Happening <span class="arrow">&#x25BC;</span></a></li>
+			<li><a onclick="plantrip()">Plan your Trip <span class="arrow">&#x25BC;</span></a></li>
 			<li><a href="subscribe.html">Subscribe</a></li>
-			<li><a href="weather.html">Weather</a></li>
-			<li><a href="laws.html">Michigan Laws</a></li>
+			<li><a href="laws.html">Laws</a></li>
 		</ul>
+		
+		<div id="our-info">
+			<a href="about.html">About Us</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		
+		<div id="to-do">
+			<a href="events.html">Events</a>
+			<a href="restaurants.html">Restaurants</a>
+		</div>
+		
+		<div id="plan-trip">
+			<a href="hotels.html">Hotels</a>
+			<a href="weather.html">Weather</a>
+		</div>
 	</nav>
 	
 	<main>
@@ -38,4 +72,7 @@
 		<p><a href="mailto:circumspicetravel@travel.com">circumspicetravel@travel.com</a></p>
 		<p><a href="tel:+16162596427">616-259-6427</a></p>
 	</footer>
+	
+	<script src="scripts/script.js"></script>
+	
 </body>

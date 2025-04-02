@@ -1,49 +1,178 @@
-/************
-
-************/
+/*
+	Names: Aaron, Ash, Brian, Gabe, and Makenna
+	File Name: styles.css
+	Date: 4/2/25
+*/
 
 /*CSS Reset*/
-* {padding: 0; border: 0; margin: 0;}
+* {
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
 
 /*Style rules for body and images*/
-body {background-color: #e2f4e5;}
+body {
+	background-color: #e2f4e5;
+}
 
-img {max-width: 100%;}
+img {
+	max-width: 100%;
+}
 
 /*Style rule for box sizing applies to all elements*/
-* {box-sizing: border-box;}
+* {
+	box-sizing: border-box;
+}
 
 /*Style rules for mobile viewport*/
 
 /*Style rules for header*/
-header {text-align: center; margin: 4% 2%; font-size: 1.4em;}
+header {
+	background-color: #A0E4B0;
+}
 
 /*Style rules for nav - temporary rules until we implement a hamburger menu*/
-nav {margin-bottom: 2%;}
+.mobile-nav a {
+	color: #fff;
+	font-size: 1.25em;
+}
 
-nav li {text-align: center; background-color: #56ab57; border: 1px solid #fff; padding: 2%; font-size: 1.2em;}
+#menu-links a{
+	text-decoration: none;
+	text-align: center;
+	background-color: #a0e4b0;
+	display: block;
+	font-family: Sarabun, sans-serif;
+	padding: 2% 0;
+	border-top: 2px solid #fff;
+}
 
-nav li a {text-decoration: none; color: #fff;}
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/*Show mobile class, hide tablet-desktop class and menu-links id*/
+.mobile {
+	display: block;
+}
+
+.tablet-desktop, #menu-links {
+	display: none;
+}
 
 /*Style rules for main content*/
-main {margin: 2%;}
+main {
+	margin: 2%;
+}
 
-h1, h2, h3 {font-family: "Alfa Slab One", serif; font-weight: normal;}
+h1, h2, h3, figcaption {
+	font-family: "Alfa Slab One", serif;
+	font-weight: normal;
+}
 
-p, li {font-family: Sarabun, sans-serif;}
+p, li {
+	font-family: Sarabun, sans-serif;
+}
 
-h1 {text-align: center;}
+h1, h2 {
+	text-align: center;
+}
 
-/*Style rules for footer*/
-footer {background-color: #56ab57; padding: 2%; text-align: center; color: #fff;}
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 20px;
+	max-width: 80%;
+	margin: auto;
+}
 
-footer p {margin: 1.5% 0;}
+#homegrid img {
+	border-radius: 25%;
+	min-height: 100%;
+	margin: auto;
+}
 
-footer a {text-decoration: none; color: #fff;}
+#regional-layout img {
+	display: block;
+	margin: 3% auto;
+	max-width: 90%;
+	border: 2px solid #000;
+}
 
-/*Style rules for tablet-desktop content*/
-/*Show tablet-desktop, hide mobile class*/
+footer {
+	background-color: #56ab57;
+	padding: 2%;
+	text-align: center;
+	color: #fff;
+	clear: both;
+}
 
-.tablet-desktop {display: block;}
+footer p {
+	margin: 1.5% 0;
+}
 
-.mobile {display: none;}
+footer a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/******Tablet media query******/
+@media only screen and (min-width: 650px) {
+	.mobile, .mobile-nav, #to-do, #plan-trip, #our-info {
+		display: none;
+	}
+	
+	.tablet-desktop {
+		display: block;
+	}
+	
+	header {
+		float: left;
+		width: 25%;
+	}
+	
+	nav {
+		margin-bottom: 2%;
+		background-color: #56ab57;
+	}
+
+	nav li {
+		display: inline-block;
+		text-align: center;
+		
+		font-size: 1.2em;
+	}
+
+	nav li a {
+		text-decoration: none;
+		color: #fff;
+	}
+	
+	.arrow {
+		font-size: .5em;
+		vertical-align: 35%;
+	}
+	
+	.central-mi, .west-mi, .southeast-mi {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 0 25px;
+	}
+	
+	#regional-layout h2 {
+		grid-column: 1 / span 2;
+		margin: 4% auto;
+	}
+	
+	#regional-layout h3 {
+		margin-top: 5%;
+	}
+	
+	#regional-layout p {
+		text-align: justify;
+	}
+}
