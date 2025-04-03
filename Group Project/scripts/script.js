@@ -5,9 +5,9 @@
 */
 
 //Global variables
-var infoDropdown = document.getElementById("our-info");
-var todoDropdown = document.getElementById("to-do");
-var planDropdown = document.getElementById("plan-trip");
+var infoDropdown = document.getElementById("our-info-links");
+var todoDropdown = document.getElementById("to-do-links");
+var planDropdown = document.getElementById("plan-trip-links");
 
 //Hamburger menu Function
 function hamburger() {
