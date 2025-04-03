@@ -4,11 +4,12 @@
 	Date: 4/2/25
 */
 
-/*CSS Reset*/
+/*CSS Reset and Box Sizing*/
 * {
 	padding: 0;
 	border: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 /*Style rules for body and images*/
@@ -18,11 +19,6 @@ body {
 
 img {
 	max-width: 100%;
-}
-
-/*Style rule for box sizing applies to all elements*/
-* {
-	box-sizing: border-box;
 }
 
 /*Style rules for mobile viewport*/
@@ -81,6 +77,10 @@ p, li {
 h1, h2 {
 	text-align: center;
 }
+
+.tel-link {padding: 1.5%; background-color: #56ab57; margin: 0 auto; width: 70%; }
+
+.tel-link a {text-decoration: none; color: #e2f4e5;}
 
 .grid {
 	display: grid;
