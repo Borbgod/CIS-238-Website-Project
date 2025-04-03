@@ -15,24 +15,57 @@
 
 <body id="container">
 	<header>
-		<h1>Circumspice Michigan Travel Agency</h1>
+		<img src="images/circumspice-logo.png" alt="Circumspice logo with text that says Circumpsice, your Michigan Travel Agency">
 	</header>
 	
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="contant.html">Contact Us</a></li>
-			<li><a href="about.html">About Us</a></li>
-			<li><a href="events.html">Events</a></li>
-			<li><a href="hotels.html">Hotels</a></li>
-			<li><a href="restaurants.html">Restaurants</a></li>
-			<li><a href="subscribe.html">Subscribe</a></li>
-			<li><a href="weather.html">Weather</a></li>
-			<li><a href="laws.html">Michigan Laws</a></li>
-		</ul>
+	<!--Mobile Nav-->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="about.html">About Us</a>
+			<a href="events.html">Events</a>
+			<a href="hotels.html">Hotels</a>
+			<a href="restaurants.html">Restaurants</a>
+			<a href="subscribe.html">Subscribe</a>
+			<a href="weather.html">Weather</a>
+			<a href="laws.html">Michigan Laws</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
 	</nav>
 	
-	<main>
+	<!--Tablet/desktop Nav-->
+	<!-- arrows for menus &#x25BC; &#x25B2; -->
+	<nav class="tablet-desktop">
+	
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a onclick="ourinfo()">Our Info <span class="arrow">&#x25BC;</span></a></li>
+			<li><a onclick="todo()">What's Happening <span class="arrow">&#x25BC;</span></a></li>
+			<li><a onclick="plantrip()">Plan your Trip <span class="arrow">&#x25BC;</span></a></li>
+			<li><a href="subscribe.html">Subscribe</a></li>
+			<li><a href="laws.html">Laws</a></li>
+		</ul>
+		
+		<div id="our-info">
+			<a href="about.html">About Us</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		
+		<div id="to-do">
+			<a href="events.html">Events</a>
+			<a href="restaurants.html">Restaurants</a>
+		</div>
+		
+		<div id="plan-trip">
+			<a href="hotels.html">Hotels</a>
+			<a href="weather.html">Weather</a>
+		</div>
+	</nav>
+	
+	<main id="regional-layout">
 		<h1>Events</h1>
 		
 		<article class="west-mi">
@@ -45,7 +78,9 @@
 					<li>Year-round, 11 am or 7 pm</li>
 					<li><a href="https://toursaroundmichigan.com/tour/ghost-tour/">Click here to learn more and schedule a tour!</a></li>
 				</ul>
-				<p>INFO ABOUT THE EVENT</p>
+				<p>The Walking Ghost Tour offers a wonderful opportunity to see some of the older building in Downtown Grand Rapids while also hearing of the paranormal activity that occurs within them. If the paranormal isn't your thing, Tours Around Michigan offers a variety of other options, such as beer, wine, historic home, and church tours, all available year-round!</p>
+				
+				<img src="images/downtowngr.jpg" alt="Downtown Grand Rapids">
 				
 			</section>
 			
@@ -56,9 +91,9 @@
 					<li>May 2-11, 2025</li>
 					<li><a href="https://www.tuliptime.com/">Click here to see the full list of events!</a></li>
 				</ul>
-					<p>INFO ABOUT THE EVENT</p>
+					<p>Named the fifth best flower festival in the United States by USA Today, Tulip Time is a decades-long tradition in celebration of the city's Dutch heritage. This week-long festival features a carnival and a packed line-up of events, including nightly dutch dance lessons and performances, two parades, and Fine Art and Quilt Exhibits. </p>
 				
-				<img src="images/tulips.jpg" alt="pink tulips">
+				<img src="images/tuliptime.jpg" alt="A field of pink and orange tulips with a windmill in a background">
 			</section>
 			
 			<section>
@@ -66,9 +101,23 @@
 				<ul>
 					<li>Grand Haven, MI</li>
 					<li>July 25th-August 3rd</li>
-					<li><a href="https://tickets.coastguardfest.org/">Click here to see the full list of events!</a><li>
+					<li><a href="https://tickets.coastguardfest.org/">Click here to see the full list of events!</a></li>
 				</ul>
-				<p>INFO ABOUT THE EVENT</p>
+				<p>A long-standing tradition in Grand Haven, which was the first city to ge given the designation Coast Guard City, USA, this celebration of the U.S. Coast Guard features a variety of activities and events! Opportunities inlcude attending the Cardboard Boat Race, Cruise-In Car Show, and the fireworks display, which is accompanied by a musical fountain and drones.</p>
+				
+				<img src="images/coastguard.jpg" alt="Grand Haven Coast Guard Festival Carnival">
+			</section>
+			
+			<section>
+				<h3>Breakaway Music Festival</h3>
+				<ul>
+					<li>Belknap Park, Grand Rapids, MI</li>
+					<li>August 15th &amp; 16th</li>
+					<li><a href="https://tickets.coastguardfest.org/">Click here to see the full list of events!</a></li>
+				</ul>
+				<p>INFO ABOUT THE EVENT"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				
+				<img src="images/breakawayfest.jpg" alt="Breakaway main stage surrounded by a crowd of people">
 			</section>
 		</article>
 		
@@ -78,11 +127,13 @@
 			<section>
 				<h3>Celebrating Life Powwow</h3>
 				<ul>
-					<li>Central Michigan University - McGuirk Arena; 360 E Broomfield St. Mt. Pleasant, MI 48858</li>
-					<li>March 29th & 30th, 2025</li>
-					<li><a href="https://www.cmich.edu/offices-departments/indigenous-affairs/programs/pow-wow">Click here to learn more and purchase tickets</a></li>
+					<li>Central Michigan University, Mt. Pleasant, MI</li>
+					<li>March 29th &amp; 30th, 2025</li>
+					<li><a href="https://www.cmich.edu/offices-departments/indigenous-affairs/programs/pow-wow">Click here to learn more and purchase tickets!</a></li>
 				</ul>
-				<p>INFO ABOUT THE EVENT</p>
+				<p>INFO ABOUT THE EVENT"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				
+				<img src="images/powwow.jpg" alt="Indigenous dancers entering the powwow">
 			</section>
 			
 			<section>
@@ -92,7 +143,9 @@
 					<li>April 25th-27th, 2025</li>
 					<li><a href="https://www.syrupfest.org/index.php/schedule/">Click here to see the full schedule!</a></li>
 				</ul>
-				<p>INFO ABOUT THE EVENT</p>
+				<p>INFO ABOUT THE EVENT"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				
+				<img src="images/maplesyrup.jpg" alt="maple-leaf shaped bottles of maple syrp">
 			</section>
 		</article>
 		
@@ -100,50 +153,30 @@
 			<h2>Southeast Michigan</h2>
 			
 			<section>
-				<h3>EVENT NAME</h3>
+				<h3>Ford Rouge Factory Tour</h3>
 				<ul>
-					<li>LOCATION</li>
-					<li>DATES</li>
-					<li>LINK TO MORE INFO</li>
+					<li>Dearborn, MI</li>
+					<li>Various dates throughout 2025</li>
+					<li><a href="https://www.thehenryford.org/visit/ford-rouge-factory-tour/?utm_source=www.visitdetroit.com&utm_medium=native&utm_campaign=destination-signals&utm_content=events-featured-partner-two">Click here to learn more and purchase tickets!</a></li>
 				</ul>
-				<p>INFO ABOUT THE EVENT</p>
+				<p>INFO ABOUT THE EVENT"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				
+				<img src="images/fordtour.jpg" alt="A partially built Ford truck in the factory">
 			</section>
 			
 			<section>
-				<h3>EVENT NAME</h3>
+				<h3>Movement EDM Festival</h3>
 				<ul>
-					<li>LOCATION</li>
-					<li>DATES</li>
-					<li>LINK TO MORE INFO</li>
+					<li>Hart Plaza, Detroit, MI</li>
+					<li>May 24-26, 2025</li>
+					<li><a href="https://movementfestival.com/">Click here to see the full line-up and purchase tickets!</a></li>
 				</ul>
-				<p>INFO ABOUT THE EVENT</p>
+				<p>INFO ABOUT THE EVENT"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				
+				<img src="images/movementfestival.webp" alt="An empty stage surrounded by people">
 			</section>
 		</article>
 		
-		<article class="northern-mi">
-			<h2>Northern Michigan</h2>
-			
-			<section>
-				<h3>EVENT NAME</h3>
-				<ul>
-					<li>LOCATION</li>
-					<li>DATES</li>
-					<li>LINK TO MORE INFO</li>
-				</ul>
-				<p>INFO ABOUT THE EVENT</p>
-			</section>
-			
-			<section>
-				<h3>EVENT NAME</h3>
-				<ul>
-					<li>LOCATION</li>
-					<li>DATES</li>
-					<li>LINK TO MORE INFO</li>
-				</ul>
-				<p>INFO ABOUT THE EVENT</p>
-			</section>
-		</article>
-	
 	</main>
 	
 	<footer>
@@ -151,4 +184,6 @@
 		<p><a href="mailto:circumspicetravel@travel.com">circumspicetravel@travel.com</p>
 		<p><a href="tel:+16162596427">616-259-6427</p>
 	</footer>
+	
+	<script src="scripts/script.js"></script>
 </body>
