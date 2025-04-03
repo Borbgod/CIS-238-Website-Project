@@ -40,27 +40,40 @@
 	
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a onclick="ourinfo()">Our Info <span class="arrow">&#x25BC;</span></a></li>
-			<li><a onclick="todo()">What's Happening <span class="arrow">&#x25BC;</span></a></li>
-			<li><a onclick="plantrip()">Plan your Trip <span class="arrow">&#x25BC;</span></a></li>
+			
+			<div id="our-info">
+				<li><a onclick="ourinfo()">Our Info <span class="arrow">&#x25BC;</span></a></li>
+				<div id="our-info-links">
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="to-do">
+				<li><a onclick="todo()">What's Happening <span class="arrow">&#x25BC;</span></a></li>
+				<div id="to-do-links">
+					<ul>
+						<li><a href="events.html">Events</a></li>
+						<li><a href="restaurants.html">Restaurants</a></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="plan-trip">
+				<li><a onclick="plantrip()">Plan your Trip <span class="arrow">&#x25BC;</span></a></li>
+				<div id="plan-trip-links">
+					<ul>
+						<li><a href="hotels.html">Hotels</a></li>
+						<li><a href="weather.html">Weather</a></li>
+					</ul>
+				</div>
+			</div>
+			
 			<li><a href="subscribe.html">Subscribe</a></li>
 			<li><a href="laws.html">Laws</a></li>
 		</ul>
-		
-		<div id="our-info">
-			<a href="about.html">About Us</a>
-			<a href="contact.html">Contact Us</a>
-		</div>
-		
-		<div id="to-do">
-			<a href="events.html">Events</a>
-			<a href="restaurants.html">Restaurants</a>
-		</div>
-		
-		<div id="plan-trip">
-			<a href="hotels.html">Hotels</a>
-			<a href="weather.html">Weather</a>
-		</div>
 	</nav>
 	
 	<main>
