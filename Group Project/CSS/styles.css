@@ -4,12 +4,11 @@
 	Date: 4/2/25
 */
 
-/*CSS Reset and Box Sizing*/
+/*CSS Reset*/
 * {
 	padding: 0;
 	border: 0;
 	margin: 0;
-	box-sizing: border-box;
 }
 
 /*Style rules for body and images*/
@@ -19,6 +18,11 @@ body {
 
 img {
 	max-width: 100%;
+}
+
+/*Style rule for box sizing applies to all elements*/
+* {
+	box-sizing: border-box;
 }
 
 /*Style rules for mobile viewport*/
@@ -49,6 +53,7 @@ header {
 	position: absolute;
 	right: 0;
 	top: 0;
+	cursor: pointer;
 }
 
 /*Show mobile class, hide tablet-desktop class and menu-links id*/
@@ -62,7 +67,8 @@ header {
 
 /*Style rules for main content*/
 main {
-	margin: 2%;
+	clear: both;
+	margin: 4%;
 }
 
 h1, h2, h3, figcaption {
@@ -76,6 +82,10 @@ p, li {
 
 h1, h2 {
 	text-align: center;
+}
+
+li {
+	margin-left: 5%;
 }
 
 .tel-link {padding: 1.5%; background-color: #56ab57; margin: 0 auto; width: 70%; }
@@ -103,22 +113,7 @@ h1, h2 {
 	border: 2px solid #000;
 }
 
-
-/*Style rules for contact page*/
-.map {width: 100%; height: 60%;}
-
-#contact {text-align: center; padding: 2%;}
-
-.tel-num {padding: 1.5%;}
-
-/*Style rules for michigan-laws page*/
-
-#m-laws, #u-laws {padding: 2%;}
-
-article h1, h2, h3, p, #m-left-img, #hands-free-img, .external-link h3 {padding: 1%;}
-
-h2 {text-align: center; background-color: #56ab57;}
-
+/*Style rules for footer*/
 footer {
 	background-color: #56ab57;
 	padding: 2%;
@@ -138,7 +133,7 @@ footer a {
 
 /******Tablet media query******/
 @media only screen and (min-width: 650px) {
-	.mobile, .mobile-nav, #to-do, #plan-trip, #our-info {
+	.mobile, .mobile-nav, #to-do-links, #plan-trip-links, #our-info-links {
 		display: none;
 	}
 	
@@ -146,24 +141,48 @@ footer a {
 		display: block;
 	}
 	
+	#to-do, #plan-trip #our-info {
+		display: inline-block;
+		position: relative;
+	}
+	
+	
+	#to-do-links, #plan-trip-links, #our-info-links {
+		position: absolute;
+		background-color: #56ab57;
+		width: 20%;
+	}
+	
 	header {
 		float: left;
-		width: 25%;
+		width: 20%;
 	}
 	
 	nav {
 		margin-bottom: 2%;
 		background-color: #56ab57;
-	}
-
-	nav li {
-		display: inline-block;
 		text-align: center;
-		
-		font-size: 1.2em;
 	}
 
-	nav li a {
+	nav li, nav div {
+		display: inline-block;
+		margin:  2% 1%;
+		white-space: nowrap;
+		cursor: pointer;
+	}
+	
+	nav li {
+		font-family: Sarabun, sans-serif;
+		text-align: center;
+		font-size: 1.2em;
+		
+	}
+	
+	nav div li {
+		display: block;
+	}
+
+	nav li a, #to-do-links a, #plan-trip-links a, #our-info-links a {
 		text-decoration: none;
 		color: #fff;
 	}
