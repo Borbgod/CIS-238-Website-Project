@@ -4,6 +4,7 @@
 	<title>Circumspice Michigan Travel Agency</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sarabun:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -13,60 +14,89 @@
 
 <body id="container">
 	<header>
-		<h1>Circumspice Michigan Travel Agency</h1>
+		<img src="images/circumspice-logo.png" alt="Circumspice logo with text that says Circumpsice, your Michigan Travel Agency">
 	</header>
 	
-	<nav>
+	<!--Tablet/desktop Nav-->
+	<!-- arrows for menus &#x25BC; &#x25B2; -->
+	<nav class="tablet-desktop">
+	
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="contact.html">Contact Us</a></li>
-			<li><a href="about.html">About Us</a></li>
-			<li><a href="events.html">Events</a></li>
-			<li><a href="hotels.html">Hotels</a></li>
-			<li><a href="restaurants.html">Restaurants</a></li>
+			<li><a onclick="ourinfo()">Our Info <span class="arrow">&#x25BC;</span></a></li>
+			<li><a onclick="todo()">What's Happening <span class="arrow">&#x25BC;</span></a></li>
+			<li><a onclick="plantrip()">Plan your Trip <span class="arrow">&#x25BC;</span></a></li>
 			<li><a href="subscribe.html">Subscribe</a></li>
-			<li><a href="weather.html">Weather</a></li>
-			<li><a href="laws.html">Michigan Laws</a></li>
+			<li><a href="laws.html">Laws</a></li>
 		</ul>
+		
+		<div id="our-info">
+			<a href="about.html">About Us</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		
+		<div id="to-do">
+			<a href="events.html">Events</a>
+			<a href="restaurants.html">Restaurants</a>
+		</div>
+		
+		<div id="plan-trip">
+			<a href="hotels.html">Hotels</a>
+			<a href="weather.html">Weather</a>
+		</div>
 	</nav>
 	
 	<main>
 		<h2>Welcome to Circumspice Michigan Travel!</h2>
+		
 		<article>
-			<section class="grid desktop" id="homegrid">
+			<section class="intro">
+				<p>Discover the beauty and charm of Michigan with Circumspice Michigan Travel, your trusted guide for unforgettable adventures! We’re here to help you experience Michigan like never before. Let’s plan your perfect trip together!</p>
+			</section>
+			
+			<section class="intro">
+				<p>Whether you're looking for the latest events across Michigan, the best restaurants to try, or reliable hotel options, Circumspice Michigan Travel has you covered. Dive into our weather page for up-to-date forecasts, check out local laws to travel smart, and don’t miss our subscribe page for the latest travel tips and updates. Want to learn more about us or get in touch? Our About and Contact pages are just a click away. Everything you need to plan your perfect Michigan trip is right here!</p>
+			</section>
+
+		</article>
+		<article class="home-content">
+			<section class="maingrid" id="homegrid">
 					<figure>
 						<figcaption>Events</figcaption>
-						<img src="images/mievent.jpg">
+						<a href="events.html"><img src="images/mievent.jpg"></a>
 					</figure>
 					<figure>
 						<figcaption>Hotels</figcaption>
-						<img src="images/hotelroom.jpg">
+						<a href="hotels.html"><img src="images/hotelroom.jpg"></a>
 					</figure>
 					<figure>
 						<figcaption>Restaurants</figcaption>
-						<img src="images/restaurant.webp">
+						<a href="restaurants.html"><img src="images/restaurant.webp"></a>
 					</figure>
 					<figure>
 						<figcaption>Weather</figcaption>
-						<img src="images/weather.jpg">
+						<a href="weather.html"><img src="images/weather.jpg"></a>
 					</figure>
 					<figure>
 						<figcaption>Laws</figcaption>
-						<img src="images/scale.jpg">
+						<a href="laws.html"><img src="images/scale.jpg"></a>
 					</figure>
 					<figure>
 						<figcaption>Newsletter</figcaption>
-						<img src="images/newsletter.jpg">
+						<a href="subscribe.html"><img src="images/newsletter.jpg"></a>
 					</figure>
 					<figure>
 						<figcaption>About Us</figcaption>
-						<img src="images/about.png">
+						<a href="about.html"><img src="images/about.png"></a>
 					</figure>
 					<figure>
 						<figcaption>Contact Us</figcaption>
-						<img src="images/contact.png">
+						<a href="contact.html"><img src="images/contact.png"></a>
 					</figure>
 			</section>
+		</article>
+		<article>
+			
 		</article>
 	</main>
 	
@@ -75,4 +105,7 @@
 		<p><a href="mailto:circumspicetravel@travel.com">circumspicetravel@travel.com</a></p>
 		<p><a href="tel:+16162596427">616-259-6427</a></p>
 	</footer>
+	
+	<script src="scripts/script.js"></script>
+	
 </body>
