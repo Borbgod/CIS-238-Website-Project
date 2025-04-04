@@ -1,7 +1,7 @@
 /*
 	Names: Aaron, Ash, Brian, Gabe, and Makenna
 	File Name: styles.css
-	Date: 4/2/25
+	Date: 4/3/25
 */
 
 /*CSS Reset*/
@@ -21,9 +21,9 @@ img {
 }
 
 /*Style rule for box sizing applies to all elements*/
-* {
-	box-sizing: border-box;
-}
+ * {
+ 	box-sizing: border-box;
+ }
 
 /*Style rules for mobile viewport*/
 
@@ -71,7 +71,7 @@ main {
 	margin: 4%;
 }
 
-h1, h2, h3, figcaption {
+h1, h2, h3 {
 	font-family: "Alfa Slab One", serif;
 	font-weight: normal;
 }
@@ -85,35 +85,56 @@ h1, h2 {
 }
 
 li {
-	margin-left: 5%;
-}
+ 	margin-left: 5%;
+ }
 
 .tel-link {padding: 1.5%; background-color: #56ab57; margin: 0 auto; width: 70%; }
 
 .tel-link a {text-decoration: none; color: #e2f4e5;}
 
-.grid {
+/* Style rules for home page */
+	
+.intro {
+	max-width: 90%;
+	text-align: center;
+	border: 1px solid #434343;
+	border-radius: 10px;
+	margin: 3% auto;
+	background-color: #fff;
+	box-shadow: #434343 0px 4px 6px;
+}
+	
+.maingrid {
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: 20% 20% 20% 20%;
 	grid-gap: 20px;
-	max-width: 80%;
-	margin: auto;
+	margin: 2% auto;
+	justify-content: center;
+}
+
+#homegrid {
+	text-align: center;
 }
 
 #homegrid img {
 	border-radius: 25%;
-	min-height: 100%;
-	margin: auto;
+	margin: 5% auto auto;
 }
 
-#regional-layout img {
-	display: block;
-	margin: 3% auto;
-	max-width: 90%;
-	border: 2px solid #000;
+#homegrid figure {
+    box-shadow: #434343 0px 4px 6px;
+    background: white;
+    padding: 10%;
+    border-radius: 10%;
 }
 
-/*Style rules for footer*/
+#homegrid figcaption {
+	font-family: "Alfa Slab One", serif;
+	font-weight: normal;
+	font-size: .6em;
+}
+
+/* Style rules for footer */
 footer {
 	background-color: #56ab57;
 	padding: 2%;
@@ -142,16 +163,16 @@ footer a {
 	}
 	
 	#to-do, #plan-trip #our-info {
-		display: inline-block;
-		position: relative;
-	}
-	
-	
-	#to-do-links, #plan-trip-links, #our-info-links {
-		position: absolute;
-		background-color: #56ab57;
-		width: 20%;
-	}
+ 		display: inline-block;
+ 		position: relative;
+ 	}
+ 	
+ 	
+ 	#to-do-links, #plan-trip-links, #our-info-links {
+ 		position: absolute;
+ 		background-color: #56ab57;
+ 		width: 20%;
+ 	}
 	
 	header {
 		float: left;
@@ -167,19 +188,18 @@ footer a {
 	nav li, nav div {
 		display: inline-block;
 		margin:  2% 1%;
-		white-space: nowrap;
-		cursor: pointer;
+ 		white-space: nowrap;
+ 		cursor: pointer;
 	}
 	
 	nav li {
-		font-family: Sarabun, sans-serif;
+ 		font-family: Sarabun, sans-serif;
 		text-align: center;
 		font-size: 1.2em;
-		
 	}
 	
 	nav div li {
-		display: block;
+ 		display: block;
 	}
 
 	nav li a, #to-do-links a, #plan-trip-links a, #our-info-links a {
@@ -209,5 +229,13 @@ footer a {
 	
 	#regional-layout p {
 		text-align: justify;
+	}
+
+	#homegrid {
+		max-width: 80%;
+	}
+	
+	#homegrid figcaption {
+		font-size: .75em;
 	}
 }
