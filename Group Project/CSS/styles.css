@@ -18,6 +18,7 @@ body {
 
 img {
 	max-width: 100%;
+	margin: 3% auto;
 }
 
 /*Style rule for box sizing applies to all elements*/
@@ -88,9 +89,22 @@ li {
  	margin-left: 5%;
  }
 
-.tel-link {padding: 1.5%; background-color: #56ab57; margin: 2% auto; width: 70%; }
+main a {
+	color: #4a1c0a;
+	font-style: italic;
+	text-decoration: none;
+}
 
-.tel-link a {text-decoration: none; color: #e2f4e5;}
+.tel-link {
+	padding: 1.5%;
+	background-color: #56ab57;
+	margin: 2% auto;
+	width: 70%;
+}
+
+.tel-link a {
+	text-decoration: none; color: #e2f4e5;
+}
 
 /* Style rules for home page */
 	
@@ -153,19 +167,32 @@ footer a {
 }
 
 /*Style rules for contact page*/
- .map {width: 100%; height: 60%;}
+ .map {
+	 width: 100%;
+	 height: 60%;
+ }
  
- #contact {text-align: center; padding: 2%;}
+ #contact {
+	 text-align: center;
+	 padding: 2%;
+ }
  
- .tel-num {padding: 1.5%;}
+ .tel-num {
+	padding: 1.5%;
+ }
  
  /*Style rules for michigan-laws page*/
+ #m-laws, #u-laws {
+	padding: 2%;
+ }
  
- #m-laws, #u-laws {padding: 2%;}
+ article h1, h2, h3, p, #m-left-img, #hands-free-img, .external-link h3 {
+	 padding: 1%;
+ }
  
- article h1, h2, h3, p, #m-left-img, #hands-free-img, .external-link h3 {padding: 1%;}
- 
- h2 {text-align: center; background-color: #56ab57;}
+ h2 {
+	 background-color: #56ab57;
+ }
 
 /******Tablet media query******/
 @media only screen and (min-width: 650px) {
