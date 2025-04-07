@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Circumspice Michigan Travel Agency</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sarabun:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<!-- The two fonts I (Aaron) selected are Alfa Slab One (serif) and Sarabun (sans-serif) -->
+</head>
+
+<body id="container">
+	<header>
+		<img src="images/circumspice-logo.png" alt="Circumspice logo with text that says Circumpsice, your Michigan Travel Agency">
+	</header>
+	
+	<!--Mobile Nav-->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="about.html">About Us</a>
+			<a href="events.html">Events</a>
+			<a href="hotels.html">Hotels</a>
+			<a href="restaurants.html">Restaurants</a>
+			<a href="subscribe.html">Subscribe</a>
+			<a href="weather.html">Weather</a>
+			<a href="laws.html">Michigan Laws</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+	
+	<!--Tablet/desktop Nav-->
+	<!-- arrows for menus &#x25BC; &#x25B2; -->
+	<nav class="tablet-desktop">
+	
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			
+			<div id="our-info">
+				<li><a onclick="ourinfo()">Our Info <span class="arrow">&#x25BC;</span></a></li>
+				<div id="our-info-links">
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="to-do">
+				<li><a onclick="todo()">What's Happening <span class="arrow">&#x25BC;</span></a></li>
+				<div id="to-do-links">
+					<ul>
+						<li><a href="events.html">Events</a></li>
+						<li><a href="restaurants.html">Restaurants</a></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="plan-trip">
+				<li><a onclick="plantrip()">Plan your Trip <span class="arrow">&#x25BC;</span></a></li>
+				<div id="plan-trip-links">
+					<ul>
+						<li><a href="hotels.html">Hotels</a></li>
+						<li><a href="weather.html">Weather</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<li><a href="subscribe.html">Subscribe</a></li>
+			<li><a href="laws.html">Laws</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+
+		<h2>Mission Statment</h2>
+
+			<p id="p-1">We strive to get the right information and planning to the people who need it.</p>
+
+			<div id="spread">
+				<section>
+
+					<h2>Who Are We?</h2>
+
+					<p id="p-2">Hi we are Circumspice Michigan Travel Agency, we strive to get many natives and tourist the best informaiton and planning to do things around Michigan. We provide the top-notch activites for friends and families. If you think that you are planning to do some activities visit our <span><a href="subscribe.html">Subscribe</a></span> page to get involved.</p>
+
+				</section>
+
+
+
+				<section class="tablet-desktop" id="sec-2">
+
+					<h2>Top 25 thigns to do in Michigan</h2>
+
+					<video controls playsinline>
+
+						<source src="media/mtp25.mp4" type="video/mp4">
+
+						<source src="media/mtp25.webm" type="video/webm">
+
+						<source src="media/mtp25.mov" type="video/mov">
+
+					</video>
+				</section>
+
+			</div>
+
+
+				<section id="sec-3">
+
+					<h3>Some things we provide information for: </h3>
+
+					<ul id="in-list">
+
+						<li>Events (Events around Michigan that suit all types activites)</li>
+						<li>Hotels (Hotels near and around events, also the best hotels around Michigan)</li>
+						<li>Resturants (Best resturants in Michigan to bring friends and family)</li>
+						<li>Weather (Types of weather Michgian can experience and what the weather will be like in days to come. )</li>
+						<li>Michigan Laws (The type of laws that Michigan has created that tourists may not know of)</li>
+
+					</ul>
+
+				</section>
+
+			
+			
+
+			<section id="last-sec">
+				<p>If your still looking for more things to do around Michigan, you may want to visit <a href="https://www.michigan.org/things-to-do" target="_blank">Pure Michigan</a> for more information.</p>
+			</section>
+	
+	</main>
+	
+	<footer>
+		<p>&#169; Copyright 2025. All Rights Reserved</p>
+		<p><a href="mailto:circumspicetravel@travel.com">circumspicetravel@travel.com</a></p>
+		<p><a href="tel:+16162596427">616-259-6427</a></p>
+	</footer>
+	
+	<script src="scripts/script.js"></script>
+	
+</body>
