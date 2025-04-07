@@ -48,3 +48,16 @@ function plantrip() {
 		planDropdown.style.display = "block";
 	}
 }
+
+function acksub(event) {
+      var checkbox = document.getElementById('terms-checkbox');
+
+      if (!checkbox.checked) {
+        alert("You must acknowledge the terms and conditions to proceed.");
+        event.preventDefault();
+      }
+}
+
+      function showTerms() {
+      alert("Here are the Terms and Conditions:\n1. We are not responsibale for any unreasonable acts.\n2. You must pay on time for your subscription or you will be double charged.\n3. Some of the activites we suggest may be not kid friendly so we are not held responisble for sensorship.\n4. If asked, you may need to show subscription card to get into certian places.\n 5. We are not responsible for any lost subscription cards.");
+}
