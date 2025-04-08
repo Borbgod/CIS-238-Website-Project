@@ -183,8 +183,9 @@ footer a {
 
 .seasons img {
 	display: block;
-	height: 300px;
-	width: 600px;
+	height: 400px;
+	width: 800px;
+	max-width: 100%;
 	margin: 5% auto;
 }
 
@@ -199,6 +200,10 @@ footer a {
 	font-size: 1.5em;
 	font-weight: bold;
 	margin: 7% 0 5%;
+}
+
+#weather-main {
+	border: 3px solid #A0E4B0;
 }
 
 /*Style rules for contact page*/
