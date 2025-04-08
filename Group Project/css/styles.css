@@ -166,6 +166,41 @@ footer a {
 	color: #fff;
 }
 
+/* Style rules for contact page */
+#weather-info {
+	margin: 5%;
+}
+
+#weather-info li{
+	margin: 3%;
+	list-style-type: none;
+	font-size: 1.2em;
+}
+
+#weather-info a, .seasons a {
+	font-weight: bold;
+}
+
+.seasons img {
+	display: block;
+	height: 300px;
+	width: 600px;
+	margin: 5% auto;
+}
+
+.seasons li {
+	margin: 3%;
+	list-style-type: none;
+	font-size: 1.2em;
+}
+
+#season-info {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 7% 0 5%;
+}
+
 /*Style rules for contact page*/
  .map {
 	 width: 100%;

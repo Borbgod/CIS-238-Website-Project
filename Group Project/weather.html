@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Circumspice Michigan Travel Agency</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sarabun:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	<!-- The two fonts I (Aaron) selected are Alfa Slab One (serif) and Sarabun (sans-serif) -->
+</head>
+
+<body id="container">
+	<header>
+		<img src="images/circumspice-logo.png" alt="Circumspice logo with text that says Circumpsice, your Michigan Travel Agency">
+	</header>
+	
+	<!--Mobile Nav-->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="about.html">About Us</a>
+			<a href="events.html">Events</a>
+			<a href="hotels.html">Hotels</a>
+			<a href="restaurants.html">Restaurants</a>
+			<a href="subscribe.html">Subscribe</a>
+			<a href="weather.html">Weather</a>
+			<a href="laws.html">Michigan Laws</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+	
+	<!--Tablet/desktop Nav-->
+	<!-- arrows for menus &#x25BC; &#x25B2; -->
+	<nav class="tablet-desktop">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li class="our-info"><a onclick="ourinfo()">Our Info <span class="arrow">&#x25BC;</span></a>
+				<div id="our-info-links">
+					<p><a href="about.html">About Us</a></p>
+					<p><a href="contact.html">Contact Us</a></p>
+				</div>
+			</li>
+			
+			<li><a class="to-do" onclick="todo()">What's Happening <span class="arrow">&#x25BC;</span></a>
+				<div id="to-do-links">
+					<p><a href="events.html">Events</a></p>
+					<p><a href="restaurants.html">Restaurants</a></p>
+				</div>
+			</li>
+			
+			<li class="plan-trip"><a onclick="plantrip()">Plan your Trip <span class="arrow">&#x25BC;</span></a>
+				<div id="plan-trip-links">
+					<p><a href="hotels.html">Hotels</a></p>
+					<p><a href="weather.html">Weather</a></p>
+				</div>
+			</li>
+			<li><a href="subscribe.html">Subscribe</a></li>
+			<li><a href="laws.html">Laws</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<ul id="weather-info">
+			<li>No matter where you're traveling to, its best to prepare for the weather!</li>
+			<li>Look below for frequently visited cities, and for more information about a specific city, visit <a href="https://www.weather.com">weather.com</a></li>
+		</ul>
+		
+        <div class="tomorrow" data-location-id="117473,115291,120127,279394,127784,116817" data-language="EN" data-unit-system="IMPERIAL" data-skin="light" data-widget-type="current6" style="padding-bottom:22px;position:relative;">
+          <a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer" target="_blank" style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"></a>
+        </div>
+		
+		<p id="season-info">Michigan's seasons can be hard to plan around, but with this season-specific information, you are in good hands!</p>
+		<article class="seasons">
+			<h2>Spring</h2>
+			<img src="images/spring.jpg" alt="A field of tulips">
+			<ul>
+				<li>Temperature: 30s – 70s °F</li>
+				<li>Weather: Spring starts cold, but warms up near May. A healthy dose of rain makes for a beautiful blossom!</li>
+				<li>Fun fact: The Holland Tulip Time Festival takes place during this season! Check it out on our <a href="events.html">Events page</a></li>
+			</ul>
+		</article>
+		<article class="seasons">
+			<h2>Summer</h2>
+			<img src="images/summer.jpg" alt="A vast beach and lake">
+			<ul>
+				<li>Temperature: 70s – 90s °F</li>
+				<li>Weather: The summers consist of a good mix of hot sunny days and cool days with a breeze. The beaches and piers in West Michigan are a must-visit!</li>
+				<li>Fun Fact: Being near the Great Lakes keeps temperatures slightly cooler along the coast and fuels some storms due to the Lake Effect.</li>
+			</ul>
+		</article>
+		<article class="seasons">
+			<h2>Fall</h2>
+			<img src="images/fall.jpg" alt="A hill with stairs surrounded by trees with fall colors">
+			<ul>
+				<li>Temperature: 40s – 70s °F </li>
+				<li>Weather: Fall is crisp and cool with beautiful fall colors but can start to get cold earlier in the season, so if you're traveling during this time, pack accordingly!</li>
+				<li>Fun Fact: On rare occassions, the first snow fall of the year occurs as early as October!</li>
+			</ul>
+		</article>
+		<article class="seasons">
+			<h2>Winter</h2>
+			<img src="images/winter.jpg" alt="A snowy forest">
+			<ul>
+				<li>Temperature: -10 – 30s °F</li>
+				<li>Weather: No matter where you go in Michigan during the winter, one thing remains true: it's going to be cold. Best to bundle up, but not forget to enjoy the beauty of a Michigan snowfall!</li>
+				<li>Fun Fact: In the Upper Peninsula, the aurora borealis can be seen during the winter!</li>
+			</ul>
+		</article>
+	</main>
+	
+	<footer>
+		<p>&#169; Copyright 2025. All Rights Reserved</p>
+		<p><a href="mailto:circumspicetravel@travel.com">circumspicetravel@travel.com</a></p>
+		<p><a href="tel:+16162596427">616-259-6427</a></p>
+	</footer>
+	
+	<script src="scripts/script.js"></script>
+	<script src="scripts/weather.js"></script>
+</body>
+
+
+
