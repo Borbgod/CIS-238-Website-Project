@@ -85,9 +85,12 @@ p, li {
 	font-family: Sarabun, sans-serif;
 }
 
-h1, h2 {
-	text-align: center;
-}
+ h1, h2 {
+	 background-color: #56ab57;
+	 margin: 1% auto;
+	 text-align: center;
+	 padding: 1%;
+ }
 
 li {
  	margin-left: 5%;
@@ -185,12 +188,15 @@ main a {
  .map {
 	 width: 100%;
 	 height: 60%;
-	 margin-bottom: 3%;
  }
  
  #contact {
 	 text-align: center;
 	 padding: 2%;
+ }
+ 
+ #contact p {
+	 font-weight: bold;
  }
   
  .tel-link {
@@ -239,10 +245,9 @@ tr:nth-child(odd) {
 	 padding: 1%;
  }
  
- h2 {
-	 background-color: #56ab57;
+ #m-laws h2 {
+	 background-color: #e2f4e5;
  }
-
 
 /* CSS styling for subscribe.html */
 
@@ -294,20 +299,12 @@ fieldset {
     100% { transform: scale(1.0); }
 }
 
-#phone {
-	margin-bottom: 2%;
-}
-
-#birthY {
+#phone, #birthY, #pi {
 	margin-bottom: 2%;
 }
 
 legend {
 	font-size: 1.5em;
-}
-
-#pi {
-	margin-bottom: 2%;
 }
 
 #n-one > *{
@@ -338,11 +335,15 @@ select {
 
 #tandc:hover {
     text-decoration: underline;
+}
 
+.required {
+	color: #ff4000;
+	font-size: 0.75em;
 }
 
 /* CSS styling for about.html */
-#p-1, #p-2 {
+#p-one, #p-two {
 	margin-bottom: 4%;
 	text-align: center;
 }
@@ -358,7 +359,7 @@ video {
 	padding-left: 2%;
 }
 
-#sec-2, #sec-3 {
+#sec-two, #sec-three {
 	margin-bottom: 4%;
 }
 
@@ -407,6 +408,7 @@ footer a {
 	
 	.tel-num {
 		padding: 1.5%;
+		font-size: 1.5em;
 	}
 	
 	#to-do, #plan-trip #our-info {
@@ -534,10 +536,19 @@ footer a {
 	nav li {
 		font-size: 1.25em;
 	}
+	
+	a:hover {
+		color: #2D93AD;
+	}
+	
+	a:visited {
+		color:  #3d3d5c;
+	}
+	
 } /*End of laptop*/
 
 /*Media query for large laptops/small desktops*/
-@media only screen and (min-width: 1081px) {
+@media only screen and (min-width: 1301px) {
 	header {
 		width: 22%;
 	}
@@ -547,7 +558,7 @@ footer a {
 	}
 	
 	nav li {
-		font-size: 1.4em;
+		font-size: 1.5em;
 		padding: 0 1%;
 	}
 	
@@ -558,4 +569,8 @@ footer a {
 	
 	/*Desktop viewport: style rules for main*/
 	#container {width: 1920px; margin: 0 auto;}
+	
+	nav li {
+		font-size: 2em;
+	}
 }
