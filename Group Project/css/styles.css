@@ -516,6 +516,17 @@ footer a {
 	#submit {
 		grid-column: 1 / span 3;
 	}
+
+	/* Style rules for Restaurants and Hotels */
+	.restaurants-map {
+		margin: 0 auto 2%;
+		width: 65%;
+		height: 30em;
+	}
+
+	.center-map {
+		text-align: center;
+	} 
 }
 
 /*Media query for laptops*/
