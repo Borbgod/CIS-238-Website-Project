@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Circumspice Michigan Travel Agency</title>
+	<title>Subscribe to Newsletter | Circumspice Michigan Travel Agency</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Subscribe to the Circumspice Michigan Travel Agency Newsletter to stay up to date on upcoming events and all the best new restaurants throughout Michigan.">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sarabun:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -74,7 +75,7 @@
 
         <p> Hello there, here at the Michigan Travel Agency we strive to get you connected with all of Michigan and everything it has to offer. Below we would love for you to fill out some information to get involved. If your interested fill out all fields below and then click the green Subsribe button below. By joing our monthly subsrciption you will recieve discounted offers, travle guides, and more!!  </p>
 
-        <h2 id="head">Get Involved!</h2>
+        <h1 id="head">Get Involved!</h1>
 
         <form id="sub-part">
 
@@ -82,16 +83,16 @@
 
             <legend id="pi">Personal Information</legend>
 
-            <label for="FName">First Name:</label>
+            <label for="FName">First Name:<span class="required">*</span></label>
             <input type="text" name="FName" id="FName" required>
 
-            <label for="LName">Last Name:</label>
+            <label for="LName">Last Name:<span class="required">*</span></label>
             <input type="text" name="LName" id="LName" required>
 
-            <label for="email">Email:</label>
+            <label for="email">Email:<span class="required">*</span></label>
             <input type="email" name="email" id="email" placeholder="ex: outlook@gmail.com" required>
 
-            <label for="phone">Phone:</label>
+            <label for="phone">Phone:<span class="required">*</span></label>
             <input type="tel" id="phone" name="phone" required>
 
           </fieldset>
@@ -100,10 +101,10 @@
 
             <legend>Account Information</legend>
 
-            <label for="username">Username:</label>
+            <label for="username">Username:<span class="required">*</span></label>
             <input type="text" name="username" id="username" pattern="^[A-Za-z0-9_]{8,20}$" title="Username must be 8-20 characters long and may only contain letters, numbers, and underscores" required >
 
-            <label for="password">Password:</label>
+            <label for="password">Password:<span class="required">*</span></label>
             <input type="password" id="password" name="password"
             pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,20}$"
             title="Password must be between 8-20 characters, contain at least one letter, one number."
@@ -299,14 +300,14 @@
               <p>Address</p>
 
             <div id="add">
-              <label for="streetA">Street Address:</label>
+              <label for="streetA">Street Address:<span class="required">*</span></label>
               <input type="text" name="streetA" id="streetA" required placeholder="ex: 1234 Crany Drive">
 
-              <label for="city">City:</label>
+              <label for="city">City:<span class="required">*</span></label>
               <input type="text" name="city" id="city" required placeholder="Allendale">
 
-              <label for="state">State:</label>
-              <select id="state" name="state">
+              <label for="state">State:<span class="required">*</span></label>
+              <select id="state" name="state" required>
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -360,7 +361,7 @@
               </select>
 
 
-              <label for="zip">Zip Code:</label>
+              <label for="zip">Zip Code:<span class="required">*</span></label>
               <input type="text" name="zip" id="zip" required placeholder="49401"> 
             </div>
           </fieldset>
@@ -370,8 +371,9 @@
             <input type="checkbox" id="t-checkbox"> I acknowledge the <a href="javascript:void(0);" onclick="showTerms()" id="tandc">terms and conditions</a>
             </label><br><br>
 
-            
-              <input type="submit" id="submit" value="Subscribe" class="grow" onclick="acksub(event)">
+            <p class="required">* Required<br><br></p>
+			
+            <input type="submit" id="submit" value="Subscribe" class="grow" onclick="acksub(event)">
           
 
         </form>
