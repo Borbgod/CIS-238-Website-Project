@@ -569,8 +569,4 @@ footer a {
 	
 	/*Desktop viewport: style rules for main*/
 	#container {width: 1920px; margin: 0 auto;}
-	
-	nav li {
-		font-size: 2em;
-	}
 }
