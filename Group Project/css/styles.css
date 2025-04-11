@@ -343,7 +343,7 @@ select {
 }
 
 /* CSS styling for about.html */
-#p-one, #p-two {
+#p-one, #p-two, #p-three {
 	margin-bottom: 4%;
 	text-align: center;
 }
