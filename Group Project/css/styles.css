@@ -542,7 +542,7 @@ footer a {
 	}
 	
 	a:visited {
-		color:  #3d3d5c;
+		color:  #3d3d5c !important;
 	}
 	
 } /*End of laptop*/
