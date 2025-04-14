@@ -37,13 +37,12 @@ header img {
 
 /*Style rules for hamburger menu nav*/
 .mobile-nav a {
-	color: #fff;
+	color: #000;
 	font-size: 1.25em;
 }
 
 .mobile-nav .menu-icon{
 	font-size: 2em;
-	color: #000;
 }
 
 #menu-links a{
