@@ -537,12 +537,12 @@ footer a {
 		font-size: 1.25em;
 	}
 	
-	a:hover {
-		color: #2D93AD !important;
-	}
-	
 	a:visited {
 		color:  #3d3d5c !important;
+	}
+
+	a:hover {
+		color: #2D93AD !important;
 	}
 	
 } /*End of laptop*/
