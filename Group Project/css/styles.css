@@ -41,6 +41,11 @@ header img {
 	font-size: 1.25em;
 }
 
+.mobile-nav .menu-icon{
+	font-size: 2em;
+	color: #000;
+}
+
 #menu-links a{
 	text-decoration: none;
 	text-align: center;
