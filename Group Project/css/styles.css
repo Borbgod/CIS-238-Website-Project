@@ -470,7 +470,7 @@ footer a {
 		vertical-align: 35%;
 	}
 	
-	.central-mi, .west-mi, .southeast-mi {
+	#central-mi, #west-mi, #southeast-mi {
 		display: grid;
 		grid-template-columns: 48% 48%;
 		grid-gap: 0 25px;
